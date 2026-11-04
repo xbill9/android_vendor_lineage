@@ -25,6 +25,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     net.tethering.noprovisioning=true
 
-# Disable mobile data by default
+# Enable mobile data by default (sargo: with it off, the only PDN is IMS; tearing it down detaches LTE)
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.com.android.mobiledata=false
+    ro.com.android.mobiledata=true
